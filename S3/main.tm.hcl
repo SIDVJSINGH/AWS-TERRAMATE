@@ -6,7 +6,7 @@ stack {
 
 globals {
   aws_provider_version = "4.27.0"
-  aws_region           = "ap-northeast-2"
+  aws_region           = "ap-northeast-1"
   access_key = "AKIARQSGNPPRUIY2N3B4"
   secret_key = "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"
 }
