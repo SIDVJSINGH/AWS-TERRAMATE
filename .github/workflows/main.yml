@@ -3,7 +3,7 @@ name: Terramate Terraform AWS
 on:
   push:
     branches:
-      - main
+      - sidvjsingh
 
 jobs:
   terraform:
