@@ -5,11 +5,9 @@ resource "aws_s3_bucket" "Infrasity" {
   tags = {
     name = "S3"
     test = "true"
+    acl  = "private bucket"
   }
   versioning {
     enabled = true
-  }
-  lifecycle {
-    force_destroy = true
   }
 }

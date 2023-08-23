@@ -32,12 +32,10 @@ generate_hcl "main.tf" {
       tags = {
         name = "S3"
         test = "true"
+        acl = "private bucket"
       }
       versioning {
         enabled = true
-      }
-      lifecycle {
-        force_destroy = true
       }
     }
   }
