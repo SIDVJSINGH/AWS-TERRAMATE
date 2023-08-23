@@ -31,7 +31,6 @@ generate_hcl "main.tf" {
       acl = "private"
       tags = {
         name = "S3"
-        test = "true"
         acl = "private bucket"
       }
       versioning {
