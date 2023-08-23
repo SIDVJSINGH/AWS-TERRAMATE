@@ -7,8 +7,8 @@ stack {
 globals {
   aws_provider_version = "4.27.0"
   aws_region           = "ap-northeast-1"
-  access_key = "AKIARQSGNPPRUIY2N3B4"
-  secret_key = "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"
+  access_key           = "AKIARQSGNPPRUIY2N3B4"
+  secret_key           = "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"
 }
 generate_hcl "provider.tf" {
   content {
@@ -36,6 +36,9 @@ generate_hcl "main.tf" {
       versioning {
         enabled = true
       }
+      lifecycle {
+        force_destroy = true
+      }
+    }
   }
-}
 }

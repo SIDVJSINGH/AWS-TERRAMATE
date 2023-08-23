@@ -9,4 +9,7 @@ resource "aws_s3_bucket" "Infrasity" {
   versioning {
     enabled = true
   }
+  lifecycle {
+    force_destroy = true
+  }
 }
