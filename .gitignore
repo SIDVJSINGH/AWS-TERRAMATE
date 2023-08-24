@@ -3,3 +3,4 @@
 *.txt
 *.tfstate.*
 *.tfstate
+out.tfplan

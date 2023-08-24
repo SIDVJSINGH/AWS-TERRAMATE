@@ -34,6 +34,6 @@ jobs:
       - name: Terramate Run
         working-directory: S3
         run: |
-          terramate run terraform init -lock=false
-          terramate run terraform plan -lock=false
-          terramate run terraform apply -auto-approve -lock=false
+          terramate run --changed -- terraform init -lock=false
+          terramate run --changed -- terraform plan -lock=false
+          terramate run --changed -- terraform apply -auto-approve -lock=false
